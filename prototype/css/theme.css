@@ -1,0 +1,155 @@
+/* =====================================================================
+   Mygate Homes walk-in onboarding — THEME
+   Every colour and font in the prototype lives here. Restyle to the Mygate
+   brand by editing these values only: the art (index.html) and the code
+   (js/) reference these names and never hard-code a colour.
+   ===================================================================== */
+:root {
+  /* Fonts */
+  --font-ui: 'Plus Jakarta Sans', system-ui, sans-serif;      /* form card */
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif; /* signs, nameplate */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;     /* lift floor display */
+
+  /* Form card and UI */
+  --accent: #2A3FB8;         /* Primary button, links, focus */
+  --ink: #14182B;            /* Headings and body text */
+  --muted: #5A6178;          /* Secondary text */
+  --line: #D9DCE5;           /* Field borders */
+  --ok: #1F8A5B;             /* Success text and borders */
+  --err: #B3261E;            /* Error text and borders */
+  --amber: #F2B33D;          /* Selected intent dot */
+  --ui-selected-border: #E09A12; /* Selected intent border */
+  --ui-selected-bg: #FFF8E8; /* Selected intent fill */
+  --ui-chip-bg: #F1F2F6;     /* Unselected intent dot */
+  --ui-disabled-bg: #E6E8EF; /* Disabled button fill */
+  --ui-disabled-ink: #6B7186; /* Disabled button text */
+  --ui-ok-bg: #EEF8F2;       /* Verified OTP boxes */
+  --ui-err-bg: #FDF0EE;      /* Wrong OTP boxes */
+  --ui-ok-chip: #E7F6EE;     /* Check badge on the final screen */
+  --ui-bubble-sub: #3B4256;  /* Speech bubble second line */
+  --c-warm-wash: #FBE9C7;    /* Warm light wash when entering the home */
+  --c-phone-bg: #1B2547;     /* Phone background behind the world */
+
+  /* World — Shared */
+  --c-white: #FFF;             /* stars, highlights, window frames */
+  --c-black: #000;             /* door shade gradient */
+  --c-amber: #F2B33D;          /* lamplight, lit windows, lit buttons, badges */
+  --c-lamp-glow: #FFD98A;      /* lamp halo, light spill */
+  --c-lamp-bulb: #FFD27A;      /* lamp bulbs, lit doorbell */
+  --c-lamp-shade: #FFE2A0;     /* wall lamp shades */
+  --c-ceiling-light: #FFF1C9;  /* ceiling light strips */
+  --c-fixture: #8C7B5E;        /* lamp and clock fixtures */
+  --c-unlit: #B9A888;          /* unlit indicator / doorbell off */
+  --c-plant: #3E7C5A;          /* potted plants */
+  --c-plant-light: #4F9470;    /* plant highlights, drifting leaf */
+  --c-terracotta: #B4462E;     /* pots, cabin roof */
+  --c-eye: #1B1B1B;            /* character eyes */
+  --c-night: #141C38;          /* sky top, cabin dim overlay */
+  --c-tower-far: #222C52;      /* distant towers */
+  --c-tower-mid: #27325C;      /* towers */
+  --c-tree-dark: #25463E;      /* trees */
+  --c-tree: #2A5045;           /* trees */
+
+  /* World — Sky */
+  --c-sky-mid: #26335F;        /* gate sky gradient */
+  --c-sky-low: #4A4E78;        /* gate sky gradient */
+  --c-sky-horizon: #8A6A72;    /* gate sky horizon glow */
+  --c-sky2-top: #18213F;       /* cabin sky gradient */
+  --c-sky2-bottom: #3B4673;    /* cabin sky gradient */
+  --c-interior-light: #FFF1CF; /* home interior gradient centre */
+  --c-interior-warm: #F6CF8A;  /* home interior gradient edge */
+  --c-steel-1: #AEB7CB;        /* lift door gradient */
+  --c-steel-2: #C9D0DF;        /* lift door gradient */
+  --c-steel-3: #A9B2C6;        /* lift door gradient */
+  --c-glass-1: #CFE6F2;        /* lobby glass gradient */
+  --c-glass-2: #9EC2D8;        /* lobby glass gradient */
+
+  /* World — Gate */
+  --c-moon: #F4E7C5;           /* moon */
+  --c-tower-near: #2C3866;     /* nearest tower */
+  --c-hedge: #1F3A35;          /* hedge row */
+  --c-road: #2A3252;           /* road */
+  --c-road-line: #465078;      /* road markings */
+  --c-gate-iron: #4A5370;      /* sliding gate */
+  --c-wall: #CDBB9B;           /* compound wall */
+  --c-wall-cap: #B9A786;       /* compound wall coping */
+  --c-stone: #D8C7A8;          /* pillars and arch */
+  --c-stone-shadow: #C4B190;   /* pillar caps, arch shadow */
+  --c-sign-ink: #1E2747;       /* "Mygate Homes" lettering */
+  --c-lamp-pole: #1A2140;      /* foreground lamp pole */
+  --c-bush-dark: #183129;      /* foreground bushes */
+  --c-bush: #1D3A31;           /* foreground bushes */
+  --c-strip-off: #A8977A;      /* pillar light strip, unlit segment */
+  --c-strip-error: #E5533D;    /* pillar light strip, invalid number */
+
+  /* World — Cabin */
+  --c-driveway: #3A3F55;       /* driveway */
+  --c-curb: #5B6280;           /* curb line */
+  --c-lobby-wall: #D9CFBD;     /* Tower B facade */
+  --c-lobby-cornice: #C4B79F;  /* Tower B cornice */
+  --c-frame-metal: #5B647F;    /* glass door frames, boom post */
+  --c-lobby-sign: #2E3A5E;     /* "TOWER B" lettering */
+  --c-lobby-interior: #F7E2B8; /* lobby interior */
+  --c-lobby-art: #E8C98E;      /* lobby wall art */
+  --c-cabin-wall: #E9DDC4;     /* guard cabin facade */
+  --c-cabin-interior: #F8E6BE; /* guard cabin interior */
+  --c-cctv: #2B3352;           /* CCTV monitor, pen */
+  --c-cctv-screen-1: #3D6E8A;  /* CCTV tiles */
+  --c-cctv-screen-2: #4B7D6A;  /* CCTV tiles */
+  --c-clock-ink: #5A4A35;      /* wall clock */
+  --c-uniform: #2E4377;        /* guard uniform, SECURITY plate */
+  --c-collar: #D9E2F2;         /* guard collar */
+  --c-uniform-dark: #24335E;   /* epaulettes, cap */
+  --c-uniform-sleeve: #26386A; /* folded arms */
+  --c-cap-peak: #1A2547;       /* cap peak */
+  --c-guard-neck: #9E6B45;     /* guard neck */
+  --c-guard-ear: #A06C46;      /* guard ears */
+  --c-guard-skin: #B07A52;     /* guard face, hands */
+  --c-guard-hair: #3B2A20;     /* brows, moustache */
+  --c-guard-mouth: #5A2E1E;    /* guard mouth */
+  --c-counter: #A9764F;        /* cabin counter */
+  --c-counter-top: #C08A5E;    /* counter top */
+  --c-register-lines: #B9BFD0; /* visitor register */
+  --c-walkie: #20242F;         /* walkie-talkie */
+  --c-led-green: #35C27A;      /* walkie LED, light strip valid */
+  --c-boom: #F4F4F4;           /* boom barrier */
+  --c-boom-stripe: #C2412D;    /* boom barrier stripes */
+  --c-shrub: #2C5446;          /* foreground shrub */
+  --c-bollard: #20273F;        /* bollards */
+
+  /* World — Lift */
+  --c-lift-wall: #6F7890;      /* lift back wall, door surround */
+  --c-lift-ceiling: #4E5670;   /* lift ceiling */
+  --c-lift-side: #5D6680;      /* lift side walls, button panel */
+  --c-lift-floor: #383D50;     /* lift floor */
+  --c-handrail: #C9CFDD;       /* handrails */
+  --c-lift-front: #8A93AA;     /* lift front wall */
+  --c-display: #0E1222;        /* floor display */
+  --c-lift-button: #9AA3B5;    /* unlit floor buttons */
+  --c-steel-line: #AEB6C9;     /* brushed-steel lines */
+
+  /* World — Corridor */
+  --c-corridor-wall: #EADFCB;  /* corridor wall */
+  --c-corridor-skirting: #C9B595; /* skirting, lobby floor */
+  --c-corridor-floor: #B89C76; /* corridor floor */
+  --c-corridor-ceiling: #D8CBB2; /* corridor ceiling */
+  --c-floor-line: #A88C66;     /* floor tile lines */
+  --c-door-frame: #5E3B26;     /* door frame, nameplate text */
+  --c-door: #8A5A3B;           /* front door */
+  --c-door-panel: #774C31;     /* door panel mouldings */
+  --c-brass: #D8B45A;          /* nameplate, handle, chain */
+  --c-chain-plate: #B8943E;    /* chain plate */
+  --c-bell-plate: #F4EEDF;     /* doorbell plate */
+  --c-doormat: #7A6A4F;        /* doormat */
+  --c-console: #9C7A55;        /* foreground console */
+  --c-console-top: #7E6142;    /* console top */
+  --c-home-floor: #D9B98A;     /* home floor */
+  --c-window: #BFE0EE;         /* home window */
+  --c-sofa-arm: #356B4E;       /* sofa arm */
+  --c-home-dark: #3A2A1F;      /* dark interior before the door opens */
+  --c-resident-shirt: #3E7C9A; /* resident clothing */
+  --c-resident-neck: #B9825A;  /* resident neck */
+  --c-resident-skin: #C68E62;  /* resident face, hands */
+  --c-resident-hair: #2B1B14;  /* resident hair */
+  --c-resident-mouth: #7A3B26; /* resident mouth */
+}
